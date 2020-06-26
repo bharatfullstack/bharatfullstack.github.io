@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row mb-3\">\n  <div class=\"col-xs-4 col-md-4 col-lg-4\"></div>\n  <div class=\"col-xs-8 col-md-8 col-lg-8\">\n    <div class=\"container\">\n      <form action=\"\" #f=\"ngForm\" (ngSubmit)=\"onSubmit(f)\">\n        <div class=\"row\">\n          <div class=\"col-md-6\">\n            <div class=\"form-group\">\n              <label for=\"username\"> Username </label>\n              <input\n                type=\"text\"\n                class=\"form-control text-center\"\n                ngModel\n                name=\"username\"\n                required\n              />\n            </div>\n          </div>\n        </div>\n        <div class=\"row\">\n          <div class=\"col-md-6\">\n            <div class=\"form-group\">\n              <label for=\"password\">Password</label>\n              <input\n                type=\"password\"\n                class=\"form-control\"\n                ngModel\n                name=\"password\"\n                required\n              />\n            </div>\n          </div>\n        </div>\n        <div class=\"row\" *ngIf=\"!loginMode\">\n          <div class=\"col-md-6\">\n            <div class=\"form-group\">\n              <label for=\"password\">Re-enter Password</label>\n              <input\n                type=\"password\"\n                [ngClass]=\"{\n                  passwordmismatch: f.value.password !== f.value.rpassword\n                }\"\n                class=\"form-control\"\n                ngModel\n                name=\"rpassword\"\n                required\n              />\n            </div>\n          </div>\n        </div>\n        <div class=\"row\" *ngIf=\"!loginMode\">\n          <div class=\"col-md-6\">\n            <div class=\"form-group\">\n              <label for=\"Address\">Address</label>\n              <input type=\"text\" class=\"form-control\" ngModel name=\"address\" />\n            </div>\n          </div>\n        </div>\n\n        <div class=\"row text-center\">\n          <div class=\"col-md-6\">\n            <button\n              class=\"btn btn-primary\"\n              type=\"submit\"\n              [disabled]=\"\n                !f.valid ||\n                (f.value.password !== f.value.rpassword && loginMode === false)\n              \"\n            >\n              {{ message }}\n            </button>\n          </div>\n        </div>\n        <div *ngIf=\"wrongCredentials\" class=\"row text-center\">\n          <div class=\"col-md-6\">\n            <h5 class=\"alert alert-danger mt-3\">Wrong Credentials</h5>\n          </div>\n        </div>\n      </form>\n    </div>\n  </div>\n  <div class=\"col-xs-4 col-md-4 col-lg-4 \"></div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-xs-4 col-md-4 col-lg-4\"></div>\n  <div class=\"col-xs-8 col-md-8 col-lg-8\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-md-6 text-center\">\n             <h5 class=\"text-center mt-50\">OR</h5>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-xs-4 col-md-4 col-lg-4\"></div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-xs-4 col-md-4 col-lg-4\"></div>\n  <div class=\"col-xs-8 col-md-8 col-lg-8\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-md-6 text-center\">\n          <a class=\"btn btn-primary text-white\" (click)=\"demoLogin()\">Login as DemoUser</a>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-xs-4 col-md-4 col-lg-4\"></div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row mb-4\">\n  <div class=\"col-xs-4 col-md-4 col-lg-4\"></div>\n  <div class=\"col-xs-8 col-md-8 col-lg-8\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-md-6 text-center\">\n\n             <h3 class=\"text-center text-secondary mt-50\">{{message}}  </h3>\n             <img src=\"/assets/images/Bookstore_logo.jpg\">\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-xs-4 col-md-4 col-lg-4\"></div>\n</div>\n<div class=\"row mb-3\">\n  <div class=\"col-xs-4 col-md-4 col-lg-4\"></div>\n  <div class=\"col-xs-8 col-md-8 col-lg-8\">\n    <div class=\"container \">\n      <form action=\"\" #f=\"ngForm\" (ngSubmit)=\"onSubmit(f)\">\n        <div class=\"row \">\n          <div class=\"col-md-6 \">\n            <div class=\"form-group\">\n              <label for=\"username\"> Username </label>\n              <input\n                type=\"text\"\n                class=\"form-control text-center\"\n                ngModel\n                name=\"username\"\n                required\n              />\n            </div>\n          </div>\n        </div>\n        <div class=\"row\">\n          <div class=\"col-md-6 \">\n            <div class=\"form-group\">\n              <label for=\"password\">Password</label>\n              <input\n                type=\"password\"\n                class=\"form-control\"\n                ngModel\n                name=\"password\"\n                required\n              />\n            </div>\n          </div>\n        </div>\n        <div class=\"row\" *ngIf=\"!loginMode\">\n          <div class=\"col-md-6\">\n            <div class=\"form-group\">\n              <label for=\"password\">Re-enter Password</label>\n              <input\n                type=\"password\"\n                [ngClass]=\"{\n                  passwordmismatch: f.value.password !== f.value.rpassword\n                }\"\n                class=\"form-control\"\n                ngModel\n                name=\"rpassword\"\n                required\n              />\n            </div>\n          </div>\n        </div>\n        <div class=\"row\" *ngIf=\"!loginMode\">\n          <div class=\"col-md-6\">\n            <div class=\"form-group\">\n              <label for=\"Address\">Address</label>\n              <input type=\"text\" class=\"form-control\" ngModel name=\"address\" />\n            </div>\n          </div>\n        </div>\n\n        <div class=\"row text-center\">\n          <div class=\"col-md-6\">\n            <button\n              class=\"btn btn-primary\"\n              type=\"submit\"\n              [disabled]=\"\n                !f.valid ||\n                (f.value.password !== f.value.rpassword && loginMode === false)\n              \"\n            >\n              {{ message }}\n            </button>\n          </div>\n        </div>\n        <div *ngIf=\"wrongCredentials\" class=\"row text-center\">\n          <div class=\"col-md-6\">\n            <h5 class=\"alert alert-danger mt-3\">Wrong Credentials</h5>\n          </div>\n        </div>\n      </form>\n    </div>\n  </div>\n  <div class=\"col-xs-4 col-md-4 col-lg-4 \"></div>\n</div>\n\n<div class=\"row\" *ngIf=\"loginMode\">\n  <div class=\"col-xs-4 col-md-4 col-lg-4\"></div>\n  <div class=\"col-xs-8 col-md-8 col-lg-8\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-md-6 text-center\">\n             <h5 class=\"text-center mt-50\">OR</h5>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-xs-4 col-md-4 col-lg-4\"></div>\n</div>\n\n<div class=\"row \" *ngIf=\"loginMode\">\n  <div class=\"col-xs-4 col-md-4 col-lg-4\"></div>\n  <div class=\"col-xs-8 col-md-8 col-lg-8\">\n    <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-md-6 text-center\">\n          <a class=\"btn btn-primary text-white\" (click)=\"demoLogin()\">Login as DemoUser</a>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-xs-4 col-md-4 col-lg-4\"></div>\n</div>\n");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <div class=\"list-group text-center\">\n    <a\n      [routerLink]=\"'/category/' + bookcategory.id\"\n      *ngFor=\"let bookcategory of bookCategories\"\n      class=\"list-group-item\"\n      routerLinkActive=\"bg-primary text-white font-weight-bold\"\n      >{{ bookcategory.name }}\n    </a>\n  </div>\n  <hr />\n  <div *ngIf=\"showFilter===undefined\">\n    <div class=\"text-center\">\n      <div class=\"btn btn-link\">\n        <i class=\"fas fa-filter\">\n          Filter By\n        </i>\n      </div>\n    </div>\n    <div class=\"\">\n      <div class=\"text-center text-dark\">\n        <form action=\"\" #f=\"ngForm\" (ngSubmit)=\"onSubmit(f)\">\n          <input\n            type=\"radio\"\n            class=\"mr-2\"\n            ngModel\n            name=\"orderPrice\"\n            value=\"A\"\n            required\n          />\n          <label for=\"orderPrice\">Price: Low to High</label>\n\n          <div>\n            <input\n              type=\"radio\"\n              class=\"mr-2\"\n              ngModel\n              name=\"orderPrice\"\n              value=\"D\"\n              required\n            />\n\n            <label for=\"orderPrice\">Price: High to Low </label>\n          </div>\n          <input\n            class=\"btn btn-primary sbtn\"\n            type=\"submit\"\n            [disabled]=\"!f.valid\"\n            value=\"Apply Changes\"\n          />\n        </form>\n      </div>\n    </div>\n  </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <div class=\"list-group text-center\">\n    <a\n      [routerLink]=\"'/category/' + bookcategory.id\"\n      *ngFor=\"let bookcategory of bookCategories\"\n      class=\"list-group-item \"\n      routerLinkActive=\"bg-primary text-white font-weight-bold\"\n      >{{ bookcategory.name }}\n    </a>\n  </div>\n  <hr />\n  <div *ngIf=\"showFilter===undefined\">\n    <div class=\"text-center\">\n      <div class=\"btn btn-link\">\n        <i class=\"fas fa-filter\">\n          Filter By\n        </i>\n      </div>\n    </div>\n    <div class=\"\">\n      <div class=\"text-center text-dark\">\n        <form action=\"\" #f=\"ngForm\" (ngSubmit)=\"onSubmit(f)\">\n          <input\n            type=\"radio\"\n            class=\"mr-2\"\n            ngModel\n            name=\"orderPrice\"\n            value=\"A\"\n            required\n          />\n          <label for=\"orderPrice\">Price: Low to High</label>\n\n          <div>\n            <input\n              type=\"radio\"\n              class=\"mr-2\"\n              ngModel\n              name=\"orderPrice\"\n              value=\"D\"\n              required\n            />\n\n            <label for=\"orderPrice\">Price: High to Low </label>\n          </div>\n          <input\n            class=\"btn btn-primary sbtn\"\n            type=\"submit\"\n            [disabled]=\"!f.valid\"\n            value=\"Apply Changes\"\n          />\n        </form>\n      </div>\n    </div>\n  </div>\n</div>\n\n");
 
 /***/ }),
 
@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"loading\" class=\"d-flex justify-content-center\">\n  <div class=\"spinner-border\" role=\"status\">\n    <span class=\"sr-only\">Loading...</span>\n  </div>\n</div>\n<div *ngIf=\"!loading\" class=\"row\">\n\n  <div class=\"col-lg-3 col-md-3 \">\n    <app-book-category (sortCriteria)=\"sortBooks($event)\"></app-book-category>\n    <!-- /.list group -->\n  </div>\n  <!-- /.col-lg-3 -->\n\n  <div  class=\"col-lg-9 col-md-9  col-sm-12\">\n    <div\n        *ngIf=\"books?.length===0\"\n        class=\"col-md-12 alert alert-warning text-center\"\n      >\n        No books Found\n      </div>\n    <div class=\"row\">\n      <div class=\"col-lg-4 col-md-6 mb-4\" *ngFor=\"let book of books\">\n        <div class=\"card h-100\">\n          <a routerLink=\"/books/{{ book.id }}\"\n            ><img\n              class=\"card-img-top  \"\n              [src]=\"book.imageUrl\"\n              alt=\"No Image\"\n          /></a>\n          <div class=\"card-body\">\n            <h4 class=\"card-title\">\n              <a routerLink=\"/books/{{ book.id }}\">{{ book.name }}</a>\n            </h4>\n            <h5>{{ book.unitPrice | currency: \"INR\" }}</h5>\n            <p class=\"card-text text-truncate\">\n              {{ book.description }}\n            </p>\n          </div>\n          <div class=\"card-footer text-center\">\n            <button class=\"btn btn-primary \" (click)=\"addToCart(book)\">Add to Cart</button>\n          </div>\n        </div>\n      </div>\n\n    </div>\n    <div class=\"row\" *ngIf=\"books?.length!==0\">\n      <div class=\"col-md-6 \">\n         <div class=\"row\">\n          <div class=\"col-md-4 mt-2 text-right\"> Page Size:</div>\n          <div class=\"col-md-8\">\n            <select class=\"form-control \" (change)=\"updatepagesize($event.target.value)\"\n            style=\"width:auto;\" >\n            <option value=\"5\" selected>5</option>\n            <option value=\"7\">7</option>\n            <option value=\"10\">10</option>\n\n        </select>\n          </div>\n\n        </div>\n\n      </div>\n      <div *ngIf=\"books\" class=\"col-md-6\" >\n        <!-- jw paginaion selctor below -->\n        <ngb-pagination class=\"d-flex justify-content-end\"\n        [maxSize]=\"maxSize\"\n  [(page)]=\"currentPage\"\n  [pageSize]=\"pageSize\"\n  [collectionSize]=\"totalRecords\"\n  (pageChange)=\"listbooks()\"></ngb-pagination>\n        <!-- <jw-pagination\n          [pageSize]=\"pageSize\"\n          [items]=\"books\"\n          (changePage)=\"pageclick($event)\"\n        ></jw-pagination> -->\n      </div>\n    </div>\n  </div>\n  <!-- /.col-lg-9 -->\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"alert alert-danger text-center\" *ngIf=\"serverError\">\n  Server Is Offline. Try again in few Moments\n</div>\n<div *ngIf=\"loading\" class=\"d-flex justify-content-center\">\n  <div class=\"spinner-border\" role=\"status\">\n    <span class=\"sr-only\">Loading...</span>\n  </div>\n</div>\n<div *ngIf=\"!loading\" class=\"row\">\n  <div class=\"col-lg-3 col-md-3\">\n    <app-book-category\n      *ngIf=\"!serverError\"\n      (sortCriteria)=\"sortBooks($event)\"\n    ></app-book-category>\n    <!-- /.list group -->\n  </div>\n  <!-- /.col-lg-3 -->\n\n  <div class=\"col-lg-9 col-md-9 col-sm-12\">\n    <div\n      *ngIf=\"books?.length === 0\"\n      class=\"col-md-12 alert alert-warning text-center\"\n    >\n      No books Found\n    </div>\n    <div class=\"row\">\n      <div class=\"col-lg-4 col-md-6 mb-4\" *ngFor=\"let book of books\">\n        <!-- <div class=\"card h-100\">\n          <a routerLink=\"/books/{{ book.id }}\"\n            ><img\n              class=\"card-img-top  \"\n              [src]=\"book.imageUrl\"\n              alt=\"No Image\"\n          /></a>\n          <div class=\"card-body\">\n            <h4 class=\"card-title\">\n              <a routerLink=\"/books/{{ book.id }}\">{{ book.name }}</a>\n            </h4>\n            <h5>{{ book.unitPrice | currency: \"INR\" }}</h5>\n            <p class=\"card-text text-truncate\">\n              {{ book.description }}\n            </p>\n          </div>\n          <div class=\"card-footer text-center\">\n            <button class=\"btn btn-primary \" (click)=\"addToCart(book)\">Add to Cart</button>\n          </div>\n        </div> -->\n\n        <mat-card class=\"example-card\">\n           <a routerLink=\"/books/{{ book.id }}\"><img\n            mat-card-image\n            [src]=\"book.imageUrl\"\n            alt=\"Photo of a Shiba Inu\"\n            height=\"350px\"\n          /></a>\n          <mat-card-content>\n            <mat-card-title  class=\"text-truncate text-primary\">\n             <a routerLink=\"/books/{{ book.id }}\"> {{\n                book.name\n              }}\n              </a>\n\n            </mat-card-title>\n            <!-- <mat-card-subtitle class=\"text-truncate\">\n              {{ book.description }}</mat-card-subtitle\n            > -->\n          </mat-card-content>\n          <mat-card-actions class=\"d-flex justify-content-around\">\n            <h5 class=\"price pt-2\">{{book.unitPrice|currency:\"INR\"}}</h5>\n            <button mat-raised-button color=\"accent\" class=\"text-left\" (click)=\"addToCart(book)\">Add to Cart</button>\n          </mat-card-actions>\n        </mat-card>\n      </div>\n    </div>\n    <div class=\"row\" *ngIf=\"books?.length !== 0 && !serverError\">\n      <div class=\"col-md-6\">\n        <div class=\"row\">\n          <div class=\"col-md-4 mt-2 text-right\">Page Size:</div>\n          <div class=\"col-md-8\">\n            <select\n              class=\"form-control\"\n              (change)=\"updatepagesize($event.target.value)\"\n              style=\"width: auto;\"\n            >\n              <option value=\"5\" selected>5</option>\n              <option value=\"7\">7</option>\n              <option value=\"10\">10</option>\n            </select>\n          </div>\n        </div>\n      </div>\n      <div *ngIf=\"books\" class=\"col-md-6\">\n        <!-- jw paginaion selctor below -->\n        <ngb-pagination\n          class=\"d-flex justify-content-end\"\n          [maxSize]=\"maxSize\"\n          [(page)]=\"currentPage\"\n          [pageSize]=\"pageSize\"\n          [collectionSize]=\"totalRecords\"\n          (pageChange)=\"listbooks()\"\n        ></ngb-pagination>\n        <!-- <jw-pagination\n          [pageSize]=\"pageSize\"\n          [items]=\"books\"\n          (changePage)=\"pageclick($event)\"\n        ></jw-pagination> -->\n      </div>\n    </div>\n  </div>\n  <!-- /.col-lg-9 -->\n</div>\n");
 
 /***/ }),
 
@@ -97,7 +97,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<a class=\"btn btn-success font-weight-bold  badge-pill cartcomp\" (click)=\"checkout()\">\n\n  {{\n    totalPrice |currency:'INR'\n  }}\n\n  &nbsp;<i class=\"fas fa-cart-arrow-down\" ></i>\n  &nbsp;\n  <span class=\"badge-pill text-dark cartnum\">{{totalQuantity}}</span>\n</a>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-icon [matBadge]=\"totalQuantity\" (click)=\"checkout()\" class=\"cart-icon\" >\n\n  <i class=\"fas fa-cart-arrow-down\" style=\"color: cornflowerblue;\" ></i>\n  </mat-icon>\n\n\n\n\n\n\n");
 
 /***/ }),
 
@@ -110,7 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row ml-1\">\n    <div class=\"col-2\">\n      <a class=\"btn btn-warning\" routerLink=\"/books\">\n        <i class=\"fas fa-arrow-left\"></i> Back</a\n      >\n    </div>\n  </div>\n<div class=\"container text-center mt-2\">\n\n  <h3 *ngIf=\"items?.length > 0\" class=\"alert  text-dark\">\n    Cart Summary\n  </h3>\n  <h4 *ngIf=\"items?.length === 0 && !ordered\" class=\"mt-5 alert alert-warning text-center\">\n    Cart is empty\n  </h4>\n  <h4 *ngIf=\"ordered\" class=\"mt-5 alert alert-success text-center\">\n    Order Sucess ! redirecting  to Order History.....\n  </h4>\n  <table *ngIf=\"items?.length > 0\" class=\"table table-hover table-responsive \">\n    <thead class=\"thead-dark\">\n      <tr>\n\n        <th>Item</th>\n        <th>Price</th>\n        <th>Quantity</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let book of items\">\n        <td>\n          <div class=\"thumbnail\">\n            <img src=\"{{ book.imageUrl }}\" width=\"270\" height=\"300\" />\n          </div>\n        </td>\n        <td class=\"align-middle\">{{ book.unitPrice | currency: \"INR\" }}</td>\n        <td class=\"align-middle\">\n          <span (click)=\"deleteOne(book)\" style=\"color:goldenrod;\"\n            ><i class=\"fas fa-minus-circle \"></i\n          ></span>\n          &nbsp; {{ book.quantity }} &nbsp;\n          <span (click)=\"addOne(book)\" style=\"color:seagreen;\"><i class=\"fas fa-plus-circle\"></i></span>\n        </td>\n      </tr>\n      <tr *ngIf=\"items.length > 0\" class=\"font-weight-bold\">\n        <td class=\"align-middle\">Total</td>\n        <td class=\"align-middle\">{{ totalPrice | currency: \"INR\" }}</td>\n        <td class=\"align-middle\">{{ totalQuantity }}</td>\n      </tr>\n    </tbody>\n  </table>\n  <div class=\"row\">\n    <div class=\"col-5\">\n      <a\n        *ngIf=\"items?.length !== 0\"\n        class=\"btn btn-danger text-white\"\n        type=\"button\"\n        (click)=\"clearCart()\"\n      >\n        Clear Cart\n    </a>\n    </div>\n    <div class=\"col-2\"></div>\n    <div class=\"col-5\">\n      <a\n        *ngIf=\"items?.length !== 0 && principal\"\n        class=\"btn btn-success\"\n        type=\"button\"\n        (click)=\"placeOrder()\"\n        style=\"float: right;\"\n      >\n        Order\n    </a>\n\n\n\n\n        <a routerLink=\"/auth/login\" *ngIf=\"items?.length !== 0 && !principal\"\n        class=\"btn btn-primary\" style=\"float: right;\"> Login to Order</a>\n\n    </div>\n  </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row ml-1\">\n  <div class=\"col-2\">\n    <a class=\"btn btn-warning\" routerLink=\"/books\">\n      <i class=\"fas fa-arrow-left\"></i> Back</a\n    >\n  </div>\n</div>\n<div class=\"container text-center mt-2\">\n  <h3 *ngIf=\"items?.length > 0\" class=\"alert text-dark\">\n    Cart Summary\n  </h3>\n  <h4\n    *ngIf=\"items?.length === 0 && !ordered\"\n    class=\"mt-5 alert alert-warning text-center\"\n  >\n    Cart is empty\n  </h4>\n  <h4 *ngIf=\"ordered\" class=\"mt-5 alert alert-success text-center\">\n    Order Sucess ! redirecting to Order History.....\n  </h4>\n  <table *ngIf=\"items?.length > 0\" class=\"table table-hover\">\n    <thead class=\"thead-dark\">\n      <tr>\n        <th>Item</th>\n        <th>Price</th>\n        <th>Quantity</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr *ngFor=\"let book of items\">\n        <td>\n          <div class=\"thumbnail\">\n            <a routerLink=\"/books/{{ book.id }}\">\n              <img src=\"{{ book.imageUrl }}\" width=\"250\" height=\"300\" />\n            </a>\n          </div>\n        </td>\n        <td class=\"align-middle\">{{ book.unitPrice | currency: \"INR\" }}</td>\n        <td class=\"align-middle\">\n          <div class=\"quant\">\n            <span (click)=\"addOne(book)\" style=\"color: seagreen;\"\n              ><i class=\"fas fa-plus-circle\"></i\n            ></span>\n\n            &nbsp; {{ book.quantity }} &nbsp;\n            <span (click)=\"deleteOne(book)\" style=\"color: goldenrod;\"\n              ><i class=\"fas fa-minus-circle\"></i\n            ></span>\n          </div>\n        </td>\n      </tr>\n      <tr *ngIf=\"items.length > 0\" class=\"font-weight-bold\">\n        <td class=\"align-middle final\">Total</td>\n        <td class=\"align-middle final\">{{ totalPrice | currency: \"INR\" }}</td>\n        <td class=\"align-middle final\">{{ totalQuantity }}</td>\n      </tr>\n    </tbody>\n  </table>\n  <div class=\"row\">\n    <div class=\"col-5\">\n      <button\n        *ngIf=\"items?.length !== 0\"\n        class=\"btn btn-danger text-white\"\n        type=\"button\"\n        (click)=\"clearCart()\"\n      >\n        Clear Cart\n      </button>\n    </div>\n    <div class=\"col-2\"></div>\n    <div class=\"col-5 d-flex justify-content-around\">\n      <button\n        *ngIf=\"items?.length !== 0 && principal\"\n        class=\"btn btn-success\"\n        type=\"button\"\n        (click)=\"placeOrder()\"\n      >\n        Order\n      </button>\n\n      <a\n        routerLink=\"/auth/login\"\n        *ngIf=\"items?.length !== 0 && !principal\"\n        class=\"btn btn-primary\"\n      >\n        Login to Order</a\n      >\n    </div>\n  </div>\n</div>\n");
 
 /***/ }),
 
@@ -136,7 +136,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("  <!-- Navigation -->\n  <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\n    <div class=\"container\">\n      <a class=\"navbar-brand\" routerLink=\"books\">Book Store</a>\n      <button\n        class=\"navbar-toggler\"\n        type=\"button\"\n        data-toggle=\"collapse\"\n        data-target=\"#navbarResponsive\"\n        aria-controls=\"navbarResponsive\"\n        aria-expanded=\"false\"\n        aria-label=\"Toggle navigation\"\n      >\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n        <app-search></app-search>\n        <ul class=\"navbar-nav ml-auto\">\n          <li class=\"nav-item active\">\n            <a class=\"nav-link\" routerLink=\"/books\"\n              >Home\n              <span class=\"sr-only\">(current)</span>\n            </a>\n          </li>\n          <li class=\"nav-item mr-2 \">\n            <a class=\"nav-link text-white\" href=\"https://github.com/bharatvarmagit/BookStore\">Code <i class=\"fa fa-code\" aria-hidden=\"true\"></i></a>\n          </li>\n\n          <li *ngIf=\"principal\" class=\"nav-item  mt-2 mr-3 \">\n            <span class=\"text-primary \">Hi, {{ principal}}</span>\n          </li>\n          <li class=\"nav-item\">\n            <div class=\"dropdown\">\n  <button class=\"btn btn-dark dropdown-toggle mr-2\" type=\"button\" id=\"dropdownMenu2\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n    <i class=\"fas fa-user user-icon\" style=\"color:cornflowerblue\" ></i>\n  </button>\n\n  <div class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu2\">\n    <button *ngIf=\"!principal\" class=\"dropdown-item\" type=\"button\" (click)=\"userMenu('LI')\">Log In</button>\n    <button *ngIf=\"!principal\" class=\"dropdown-item\" type=\"button\" (click)=\"userMenu('SU')\">Sign Up</button>\n    <!-- <button *ngIf=\"principal\" class=\"dropdown-item\" type=\"button\" (click)=\"userMenu('EP')\"> Edit Profile </button> -->\n    <button *ngIf=\"principal\" class=\"dropdown-item\" type=\"button\" (click)=\"userMenu('LO')\">Log Out</button>\n    <button *ngIf=\"principal\" class=\"dropdown-item\" type=\"button\" (click)=\"userMenu('GO')\">Orders History</button>\n  </div>\n  </div>\n\n\n          </li>\n\n\n\n\n        </ul>\n      </div>\n      <app-cart-status></app-cart-status>\n    </div>\n  </nav>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- Navigation -->\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-top\">\n  <div class=\"container\">\n    <a class=\"navbar-brand\" id=\"brand-image\" href=\"#\">Book Store</a>\n    <button\n      class=\"navbar-toggler\"\n      type=\"button\"\n      data-toggle=\"collapse\"\n      data-target=\"#navbarResponsive\"\n      aria-controls=\"navbarResponsive\"\n      aria-expanded=\"false\"\n      aria-label=\"Toggle navigation\"\n    >\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n      <app-search></app-search>\n      <ul class=\"navbar-nav ml-auto\">\n        <li class=\"nav-item active\">\n          <a class=\"nav-link\" routerLink=\"/books\"\n            >Home\n            <span class=\"sr-only\">(current)</span>\n          </a>\n        </li>\n        <li class=\"nav-item mr-2\">\n          <a\n            class=\"nav-link text-white\"\n            href=\"https://github.com/bharatvarmagit/BookStore\"\n            >Code <i class=\"fa fa-code\" aria-hidden=\"true\"></i\n          ></a>\n        </li>\n\n        <li *ngIf=\"principal\" class=\"nav-item mt-2 mr-3\">\n          <span class=\"text-light\"> <i>Hi, {{ principal }}</i></span>\n        </li>\n        <li class=\"nav-item\">\n          <div class=\"dropdown\">\n            <button\n              class=\"btn btn-dark dropdown-toggle mr-2\"\n              type=\"button\"\n              id=\"dropdownMenu2\"\n              data-toggle=\"dropdown\"\n              aria-haspopup=\"true\"\n              aria-expanded=\"false\"\n            >\n              <i\n                class=\"fas fa-user user-icon\"\n                [ngClass]=\"{'loggedin': principal, 'notloggedin': !principal}\"\n              ></i>\n            </button>\n\n            <div class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu2\">\n              <button\n                *ngIf=\"!principal\"\n                class=\"dropdown-item\"\n                type=\"button\"\n                (click)=\"userMenu('LI')\"\n              >\n                Log In\n              </button>\n              <button\n                *ngIf=\"!principal\"\n                class=\"dropdown-item\"\n                type=\"button\"\n                (click)=\"userMenu('SU')\"\n              >\n                Sign Up\n              </button>\n              <!-- <button *ngIf=\"principal\" class=\"dropdown-item\" type=\"button\" (click)=\"userMenu('EP')\"> Edit Profile </button> -->\n              <button\n                *ngIf=\"principal\"\n                class=\"dropdown-item\"\n                type=\"button\"\n                (click)=\"userMenu('LO')\"\n              >\n                Log Out\n              </button>\n              <button\n                *ngIf=\"principal\"\n                class=\"dropdown-item\"\n                type=\"button\"\n                (click)=\"userMenu('GO')\"\n              >\n                Orders History\n              </button>\n            </div>\n          </div>\n        </li>\n      </ul>\n    </div>\n    <app-cart-status></app-cart-status>\n  </div>\n</nav>\n");
 
 /***/ }),
 
@@ -149,7 +149,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row \">\n    <div class=\"col-2\">\n      <a class=\"btn btn-warning\" routerLink=\"/books\">\n        <i class=\"fas fa-arrow-left\"></i> Back</a\n      >\n    </div>\n  </div>\n  <h4 *ngIf=\"orders?.length === 0\" class=\"mt-5 alert alert-warning text-\">\n    No Order History to show\n  </h4>\n<h3 *ngIf=\"orders?.length>0\" class=\"alert   text-dark text-center\">Order  History</h3\n  ><div *ngFor=\"let order of orders  \">\n  <table class=\"table  table-hover \">\n    <thead class=\"thead-dark \">\n      <tr class=\"text-center\">\n        <th>Order ID</th>\n        <th>Ordered On</th>\n        <th> Total Price </th>\n        <th>Book Name &nbsp; &nbsp;   Qty</th>\n        <th>Action</th>\n\n      </tr>\n    </thead>\n\n  <tbody class=\" align-middle\">\n        <td class=\"align-middle text-center\" [attr.rowspan]=\"getSpan(order.items)\"><p>{{order.id}}</p></td>\n    <td class=\"align-middle text-center\" [attr.rowspan]=\"getSpan(order.items)\"><p>{{order.orderedOn | date:'short'}}</p></td>\n    <td class=\"align-middle text-center\" [attr.rowspan]=\"getSpan(order.items)\"><p>{{order.totalPrice}}</p></td>\n    <span *ngFor=\"let item of order.items|keyvalue\" class=\"d-flex justify-content-center align-items-center \">\n      <td class=\" btn btn-link text-left \" ><a (click)=\"goToBook(item.key)\">{{item.key}}</a></td>&nbsp; &nbsp;\n      <td class=\"\">{{item.value}}</td>\n    </span>\n    <td class=\"align-middle text-center \"> <span class=\"hoverbin\"><i class=\"fas fa-trash-alt \" (click)=\"deleteOrder(order.id)\"></i>\n    </span></td>\n  </tbody>\n\n  </table>\n  <hr>\n\n</div>\n\n\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"loading\" class=\"d-flex justify-content-center\">\n  <div class=\"spinner-border\" role=\"status\">\n    <span class=\"sr-only\">Loading...</span>\n  </div>\n</div>\n<div class=\"row\">\n  <div class=\"col-2\">\n    <button mat-raised-button class=\"btn-warning\" routerLink=\"/books\">\n      <i class=\"fas fa-arrow-left\"></i> Back</button>\n\n  </div>\n</div>\n<h4 *ngIf=\"orders?.length === 0\" class=\"mt-5 alert alert-warning text-\">\n  No Order History to show\n</h4>\n\n<h3 *ngIf=\"orders?.length > 0\" class=\"alert text-dark text-center\">\n  Order History\n</h3>\n<div *ngFor=\"let order of orders\">\n  <table class=\"table table-hover\">\n    <thead class=\"thead-dark\">\n      <tr class=\"text-center\">\n        <th>Order ID</th>\n        <th>Ordered On</th>\n        <th>Total Price</th>\n        <th>Book Name &nbsp; &nbsp; Qty</th>\n        <th>Action</th>\n      </tr>\n    </thead>\n\n    <tbody class=\"align-middle\">\n      <td\n        class=\"align-middle text-center\"\n        [attr.rowspan]=\"getSpan(order.items)\"\n      >\n        <p>{{ order.id }}</p>\n      </td>\n      <td\n        class=\"align-middle text-center\"\n        [attr.rowspan]=\"getSpan(order.items)\"\n      >\n        <p>{{ order.orderedOn | date: \"short\" }}</p>\n      </td>\n      <td\n        class=\"align-middle text-center\"\n        [attr.rowspan]=\"getSpan(order.items)\"\n      >\n        <p>{{ order.totalPrice }}</p>\n      </td>\n      <span\n        *ngFor=\"let item of order.items | keyvalue\"\n        class=\"d-flex justify-content-center align-items-center\"\n      >\n        <td class=\"btn btn-link text-left text-truncate\">\n          <a (click)=\"goToBook(item.key)\" class=\"text-truncate\">{{ item.key }}</a>\n        </td>\n        &nbsp; &nbsp;\n        <td class=\"\">{{ item.value }}</td>\n      </span>\n      <td class=\"align-middle text-center\">\n        <span class=\"hoverbin\"\n          ><i class=\"fas fa-trash-alt\" (click)=\"deleteOrder(order.id)\"></i>\n        </span>\n      </td>\n    </tbody>\n  </table>\n  <hr />\n</div>\n");
 
 /***/ }),
 
@@ -502,25 +502,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm2015/ng-bootstrap.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _components_book_list_book_list_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/book-list/book-list.component */ "./src/app/components/book-list/book-list.component.ts");
-/* harmony import */ var _services_book_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./services/book.service */ "./src/app/services/book.service.ts");
-/* harmony import */ var _services_cart_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./services/cart.service */ "./src/app/services/cart.service.ts");
-/* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/header/header.component */ "./src/app/components/header/header.component.ts");
-/* harmony import */ var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/footer/footer.component */ "./src/app/components/footer/footer.component.ts");
-/* harmony import */ var _components_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/page-not-found/page-not-found.component */ "./src/app/components/page-not-found/page-not-found.component.ts");
-/* harmony import */ var _components_book_category_book_category_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/book-category/book-category.component */ "./src/app/components/book-category/book-category.component.ts");
-/* harmony import */ var _components_search_search_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/search/search.component */ "./src/app/components/search/search.component.ts");
-/* harmony import */ var _components_book_details_book_details_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/book-details/book-details.component */ "./src/app/components/book-details/book-details.component.ts");
-/* harmony import */ var jw_angular_pagination__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! jw-angular-pagination */ "./node_modules/jw-angular-pagination/lib/jw-pagination.component.js");
-/* harmony import */ var jw_angular_pagination__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(jw_angular_pagination__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _components_cart_status_cart_status_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/cart-status/cart-status.component */ "./src/app/components/cart-status/cart-status.component.ts");
-/* harmony import */ var _components_checkout_checkout_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/checkout/checkout.component */ "./src/app/components/checkout/checkout.component.ts");
-/* harmony import */ var _components_auth_auth_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/auth/auth.component */ "./src/app/components/auth/auth.component.ts");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var _components_auth_auth_interceptor_service__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/auth/auth-interceptor.service */ "./src/app/components/auth/auth-interceptor.service.ts");
-/* harmony import */ var _components_order_list_order_list_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/order-list/order-list.component */ "./src/app/components/order-list/order-list.component.ts");
-/* harmony import */ var ngx_order_pipe__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ngx-order-pipe */ "./node_modules/ngx-order-pipe/fesm2015/ngx-order-pipe.js");
+/* harmony import */ var _angular_material_card__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/card */ "./node_modules/@angular/material/esm2015/card.js");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm2015/button.js");
+/* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material/icon */ "./node_modules/@angular/material/esm2015/icon.js");
+/* harmony import */ var _angular_material_badge__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/badge */ "./node_modules/@angular/material/esm2015/badge.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _components_book_list_book_list_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/book-list/book-list.component */ "./src/app/components/book-list/book-list.component.ts");
+/* harmony import */ var _services_book_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./services/book.service */ "./src/app/services/book.service.ts");
+/* harmony import */ var _services_cart_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./services/cart.service */ "./src/app/services/cart.service.ts");
+/* harmony import */ var _components_header_header_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/header/header.component */ "./src/app/components/header/header.component.ts");
+/* harmony import */ var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/footer/footer.component */ "./src/app/components/footer/footer.component.ts");
+/* harmony import */ var _components_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/page-not-found/page-not-found.component */ "./src/app/components/page-not-found/page-not-found.component.ts");
+/* harmony import */ var _components_book_category_book_category_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/book-category/book-category.component */ "./src/app/components/book-category/book-category.component.ts");
+/* harmony import */ var _components_search_search_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./components/search/search.component */ "./src/app/components/search/search.component.ts");
+/* harmony import */ var _components_book_details_book_details_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/book-details/book-details.component */ "./src/app/components/book-details/book-details.component.ts");
+/* harmony import */ var jw_angular_pagination__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! jw-angular-pagination */ "./node_modules/jw-angular-pagination/lib/jw-pagination.component.js");
+/* harmony import */ var jw_angular_pagination__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(jw_angular_pagination__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _components_cart_status_cart_status_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/cart-status/cart-status.component */ "./src/app/components/cart-status/cart-status.component.ts");
+/* harmony import */ var _components_checkout_checkout_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/checkout/checkout.component */ "./src/app/components/checkout/checkout.component.ts");
+/* harmony import */ var _components_auth_auth_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/auth/auth.component */ "./src/app/components/auth/auth.component.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _components_auth_auth_interceptor_service__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/auth/auth-interceptor.service */ "./src/app/components/auth/auth-interceptor.service.ts");
+/* harmony import */ var _components_order_list_order_list_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/order-list/order-list.component */ "./src/app/components/order-list/order-list.component.ts");
+/* harmony import */ var ngx_order_pipe__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ngx-order-pipe */ "./node_modules/ngx-order-pipe/fesm2015/ngx-order-pipe.js");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
+
+
+
+
+
 
 
 
@@ -546,50 +556,55 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
-    { path: 'books/:id', component: _components_book_details_book_details_component__WEBPACK_IMPORTED_MODULE_15__["BookDetailsComponent"] },
+    { path: 'books/:id', component: _components_book_details_book_details_component__WEBPACK_IMPORTED_MODULE_19__["BookDetailsComponent"] },
     { path: 'books', redirectTo: '/category/1', pathMatch: 'full' },
-    { path: 'category/:id', component: _components_book_list_book_list_component__WEBPACK_IMPORTED_MODULE_7__["BookListComponent"] },
-    { path: 'search/:keyword', component: _components_book_list_book_list_component__WEBPACK_IMPORTED_MODULE_7__["BookListComponent"] },
-    { path: 'checkout', component: _components_checkout_checkout_component__WEBPACK_IMPORTED_MODULE_18__["CheckoutComponent"] },
-    { path: 'auth/:authmode', component: _components_auth_auth_component__WEBPACK_IMPORTED_MODULE_19__["AuthComponent"] },
-    { path: 'ordershistory', component: _components_order_list_order_list_component__WEBPACK_IMPORTED_MODULE_22__["OrderListComponent"] },
+    { path: 'category/:id', component: _components_book_list_book_list_component__WEBPACK_IMPORTED_MODULE_11__["BookListComponent"] },
+    { path: 'search/:keyword', component: _components_book_list_book_list_component__WEBPACK_IMPORTED_MODULE_11__["BookListComponent"] },
+    { path: 'checkout', component: _components_checkout_checkout_component__WEBPACK_IMPORTED_MODULE_22__["CheckoutComponent"] },
+    { path: 'auth/:authmode', component: _components_auth_auth_component__WEBPACK_IMPORTED_MODULE_23__["AuthComponent"] },
+    { path: 'ordershistory', component: _components_order_list_order_list_component__WEBPACK_IMPORTED_MODULE_26__["OrderListComponent"] },
     { path: '', redirectTo: '/category/1', pathMatch: 'full' },
-    { path: '**', component: _components_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_12__["PageNotFoundComponent"] }
+    { path: '**', component: _components_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_16__["PageNotFoundComponent"] }
 ];
 let AppModule = class AppModule {
 };
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
-            _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
-            _components_book_list_book_list_component__WEBPACK_IMPORTED_MODULE_7__["BookListComponent"],
-            _components_header_header_component__WEBPACK_IMPORTED_MODULE_10__["HeaderComponent"],
-            _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_11__["FooterComponent"],
-            _components_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_12__["PageNotFoundComponent"],
-            _components_book_category_book_category_component__WEBPACK_IMPORTED_MODULE_13__["BookCategoryComponent"],
-            _components_search_search_component__WEBPACK_IMPORTED_MODULE_14__["SearchComponent"],
-            _components_book_details_book_details_component__WEBPACK_IMPORTED_MODULE_15__["BookDetailsComponent"],
-            jw_angular_pagination__WEBPACK_IMPORTED_MODULE_16__["JwPaginationComponent"],
-            _components_cart_status_cart_status_component__WEBPACK_IMPORTED_MODULE_17__["CartStatusComponent"],
-            _components_checkout_checkout_component__WEBPACK_IMPORTED_MODULE_18__["CheckoutComponent"],
-            _components_auth_auth_component__WEBPACK_IMPORTED_MODULE_19__["AuthComponent"],
-            _components_order_list_order_list_component__WEBPACK_IMPORTED_MODULE_22__["OrderListComponent"]
+            _app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"],
+            _components_book_list_book_list_component__WEBPACK_IMPORTED_MODULE_11__["BookListComponent"],
+            _components_header_header_component__WEBPACK_IMPORTED_MODULE_14__["HeaderComponent"],
+            _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_15__["FooterComponent"],
+            _components_page_not_found_page_not_found_component__WEBPACK_IMPORTED_MODULE_16__["PageNotFoundComponent"],
+            _components_book_category_book_category_component__WEBPACK_IMPORTED_MODULE_17__["BookCategoryComponent"],
+            _components_search_search_component__WEBPACK_IMPORTED_MODULE_18__["SearchComponent"],
+            _components_book_details_book_details_component__WEBPACK_IMPORTED_MODULE_19__["BookDetailsComponent"],
+            jw_angular_pagination__WEBPACK_IMPORTED_MODULE_20__["JwPaginationComponent"],
+            _components_cart_status_cart_status_component__WEBPACK_IMPORTED_MODULE_21__["CartStatusComponent"],
+            _components_checkout_checkout_component__WEBPACK_IMPORTED_MODULE_22__["CheckoutComponent"],
+            _components_auth_auth_component__WEBPACK_IMPORTED_MODULE_23__["AuthComponent"],
+            _components_order_list_order_list_component__WEBPACK_IMPORTED_MODULE_26__["OrderListComponent"]
         ],
         imports: [
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_28__["BrowserAnimationsModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_20__["FormsModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_24__["FormsModule"],
             _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbModule"],
-            ngx_order_pipe__WEBPACK_IMPORTED_MODULE_23__["OrderModule"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forRoot(routes)
+            ngx_order_pipe__WEBPACK_IMPORTED_MODULE_27__["OrderModule"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forRoot(routes),
+            _angular_material_card__WEBPACK_IMPORTED_MODULE_6__["MatCardModule"],
+            _angular_material_button__WEBPACK_IMPORTED_MODULE_7__["MatButtonModule"],
+            _angular_material_icon__WEBPACK_IMPORTED_MODULE_8__["MatIconModule"],
+            _angular_material_badge__WEBPACK_IMPORTED_MODULE_9__["MatBadgeModule"]
         ],
         providers: [{ provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HTTP_INTERCEPTORS"],
-                useClass: _components_auth_auth_interceptor_service__WEBPACK_IMPORTED_MODULE_21__["AuthInterceptorService"],
+                useClass: _components_auth_auth_interceptor_service__WEBPACK_IMPORTED_MODULE_25__["AuthInterceptorService"],
                 multi: true },
-            _services_book_service__WEBPACK_IMPORTED_MODULE_8__["BookService"],
-            _services_cart_service__WEBPACK_IMPORTED_MODULE_9__["CartService"]
+            _services_book_service__WEBPACK_IMPORTED_MODULE_12__["BookService"],
+            _services_cart_service__WEBPACK_IMPORTED_MODULE_13__["CartService"]
         ],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_10__["AppComponent"]]
     })
 ], AppModule);
 
@@ -684,7 +699,7 @@ class AuthInterceptorService {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".checkbox{\n  transform: scale(1.5);\n}\ninput.ng-invalid.ng-touched{\n  border:2px solid red;\n\n}\n.centered {\n  position: relative;\n  top: 85px;\n  left: 50%;\n  margin-left: 50px;\n  /* bring your own prefixes */\n  transform: translate(-50%, -50%);\n}\n.passwordmismatch{\n    border:2px solid red;\n\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9hdXRoL2F1dGguY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0Usb0JBQW9COztBQUV0QjtBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxTQUFTO0VBQ1QsaUJBQWlCO0VBQ2pCLDRCQUE0QjtFQUM1QixnQ0FBZ0M7QUFDbEM7QUFDQTtJQUNJLG9CQUFvQjs7QUFFeEIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2F1dGgvYXV0aC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNoZWNrYm94e1xuICB0cmFuc2Zvcm06IHNjYWxlKDEuNSk7XG59XG5pbnB1dC5uZy1pbnZhbGlkLm5nLXRvdWNoZWR7XG4gIGJvcmRlcjoycHggc29saWQgcmVkO1xuXG59XG5cbi5jZW50ZXJlZCB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgdG9wOiA4NXB4O1xuICBsZWZ0OiA1MCU7XG4gIG1hcmdpbi1sZWZ0OiA1MHB4O1xuICAvKiBicmluZyB5b3VyIG93biBwcmVmaXhlcyAqL1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbn1cbi5wYXNzd29yZG1pc21hdGNoe1xuICAgIGJvcmRlcjoycHggc29saWQgcmVkO1xuXG59XG4iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".checkbox{\n  transform: scale(1.5);\n}\ninput.ng-invalid.ng-touched{\n  border:2px solid red;\n\n}\n.login-div{\n  box-shadow: 13px 13px 20px  #cbced1,\n              -13px -13px 20px #ffffff;\n}\n.centered {\n  position: relative;\n  top: 85px;\n  left: 50%;\n  margin-left: 50px;\n  /* bring your own prefixes */\n  transform: translate(-50%, -50%);\n}\n.passwordmismatch{\n    border:2px solid red;\n\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9hdXRoL2F1dGguY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0Usb0JBQW9COztBQUV0QjtBQUNBO0VBQ0U7c0NBQ29DO0FBQ3RDO0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsU0FBUztFQUNULFNBQVM7RUFDVCxpQkFBaUI7RUFDakIsNEJBQTRCO0VBQzVCLGdDQUFnQztBQUNsQztBQUNBO0lBQ0ksb0JBQW9COztBQUV4QiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvYXV0aC9hdXRoLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY2hlY2tib3h7XG4gIHRyYW5zZm9ybTogc2NhbGUoMS41KTtcbn1cbmlucHV0Lm5nLWludmFsaWQubmctdG91Y2hlZHtcbiAgYm9yZGVyOjJweCBzb2xpZCByZWQ7XG5cbn1cbi5sb2dpbi1kaXZ7XG4gIGJveC1zaGFkb3c6IDEzcHggMTNweCAyMHB4ICAjY2JjZWQxLFxuICAgICAgICAgICAgICAtMTNweCAtMTNweCAyMHB4ICNmZmZmZmY7XG59XG5cbi5jZW50ZXJlZCB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgdG9wOiA4NXB4O1xuICBsZWZ0OiA1MCU7XG4gIG1hcmdpbi1sZWZ0OiA1MHB4O1xuICAvKiBicmluZyB5b3VyIG93biBwcmVmaXhlcyAqL1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbn1cbi5wYXNzd29yZG1pc21hdGNoe1xuICAgIGJvcmRlcjoycHggc29saWQgcmVkO1xuXG59XG4iXX0= */");
 
 /***/ }),
 
@@ -728,11 +743,11 @@ let AuthComponent = class AuthComponent {
     onNewAuthMode(authMode) {
         if (this.authMode === "login") {
             this.loginMode = true;
-            this.message = "login";
+            this.message = "Login";
         }
         else if (this.authMode === "signup") {
             this.loginMode = false;
-            this.message = "signup";
+            this.message = "Signup";
         }
     }
     onSubmit(form) {
@@ -804,7 +819,7 @@ AuthComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("a:hover{\n\n  text-decoration: none;\n}\n.sbtn{\n  transform: scale(0.8);\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9ib29rLWNhdGVnb3J5L2Jvb2stY2F0ZWdvcnkuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7RUFFRSxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLHFCQUFxQjtBQUN2QiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvYm9vay1jYXRlZ29yeS9ib29rLWNhdGVnb3J5LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJhOmhvdmVye1xuXG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbn1cbi5zYnRue1xuICB0cmFuc2Zvcm06IHNjYWxlKDAuOCk7XG59XG4iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = ("a:hover{\n\n  text-decoration: none;\n}\n.sbtn{\n  transform: scale(0.8);\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9ib29rLWNhdGVnb3J5L2Jvb2stY2F0ZWdvcnkuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7RUFFRSxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLHFCQUFxQjtBQUN2QiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvYm9vay1jYXRlZ29yeS9ib29rLWNhdGVnb3J5LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJhOmhvdmVye1xuXG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbn1cbi5zYnRue1xuICB0cmFuc2Zvcm06IHNjYWxlKDAuOCk7XG59XG5cbiJdfQ== */");
 
 /***/ }),
 
@@ -945,7 +960,7 @@ BookDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("img{\n  display:block;\n  max-height: 100%;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9ib29rLWxpc3QvYm9vay1saXN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFhO0VBQ2IsZ0JBQWdCO0FBQ2xCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9ib29rLWxpc3QvYm9vay1saXN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpbWd7XG4gIGRpc3BsYXk6YmxvY2s7XG4gIG1heC1oZWlnaHQ6IDEwMCU7XG59XG4iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = ("img{\n  display:block;\n  max-height: 100%;\n}\n.price:hover{\n  color:orangered;\n\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9ib29rLWxpc3QvYm9vay1saXN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFhO0VBQ2IsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxlQUFlOztBQUVqQiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvYm9vay1saXN0L2Jvb2stbGlzdC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW1ne1xuICBkaXNwbGF5OmJsb2NrO1xuICBtYXgtaGVpZ2h0OiAxMDAlO1xufVxuLnByaWNlOmhvdmVye1xuICBjb2xvcjpvcmFuZ2VyZWQ7XG5cbn1cbiJdfQ== */");
 
 /***/ }),
 
@@ -984,10 +999,12 @@ let BookListComponent = class BookListComponent {
         this.totalRecords = 0;
         this.maxSize = 2;
         this.sortCriteria = null;
+        this.serverError = false;
     }
     ngOnInit() {
         this.loading = true;
         this.activatedRoute.paramMap.subscribe(() => {
+            this.loading = true;
             this.listbooks();
         });
     }
@@ -1012,7 +1029,10 @@ let BookListComponent = class BookListComponent {
         this.prevCategoryId = this.currentCategoryId;
         this.bookService
             .getbooks(this.currentCategoryId, this.currentPage - 1, this.pageSize)
-            .subscribe(this.handlePagination());
+            .subscribe(this.handlePagination(), error => {
+            this.loading = false;
+            this.serverError = true;
+        });
     }
     handlesearchbooks() {
         const keyword = this.activatedRoute.snapshot.paramMap.get('keyword');
@@ -1026,7 +1046,6 @@ let BookListComponent = class BookListComponent {
             this.currentPage = data.page.number + 1;
             this.totalRecords = data.page.totalElements;
             this.pageSize = data.page.size;
-            this.sortBooks(this.sortCriteria);
             this.loading = false;
         };
     }
@@ -1041,16 +1060,14 @@ let BookListComponent = class BookListComponent {
         this.cartService.addToCart(new src_app_common_cart_item__WEBPACK_IMPORTED_MODULE_5__["CartItem"](book));
     }
     sortBooks(val) {
+        this.loading = true;
+        let sortorder = "";
         if (val === undefined) {
             return;
         }
-        this.sortCriteria = val;
-        if (val === "A") {
-            this.books.sort((a, b) => { return (a.unitPrice > b.unitPrice ? 1 : -1); });
-        }
-        else {
-            this.books.sort((a, b) => { return (a.unitPrice < b.unitPrice ? 1 : -1); });
-        }
+        sortorder = val === "A" ? "asc" : "desc";
+        this.bookService.getsortedbooks(this.currentCategoryId, this.currentPage - 1, this.pageSize, sortorder)
+            .subscribe(this.handlePagination());
     }
 };
 BookListComponent.ctorParameters = () => [
@@ -1083,7 +1100,7 @@ BookListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n.cartnum{\n  margin-left:-18px;\n  vertical-align: top;\n  font-size: smaller;\n  color: darkorange;\n}\n\n.cartcomp{\n  transform:scale(0.85) ;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jYXJ0LXN0YXR1cy9jYXJ0LXN0YXR1cy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtFQUNFLGlCQUFpQjtFQUNqQixtQkFBbUI7RUFDbkIsa0JBQWtCO0VBQ2xCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLHNCQUFzQjtBQUN4QiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY2FydC1zdGF0dXMvY2FydC1zdGF0dXMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuLmNhcnRudW17XG4gIG1hcmdpbi1sZWZ0Oi0xOHB4O1xuICB2ZXJ0aWNhbC1hbGlnbjogdG9wO1xuICBmb250LXNpemU6IHNtYWxsZXI7XG4gIGNvbG9yOiBkYXJrb3JhbmdlO1xufVxuXG4uY2FydGNvbXB7XG4gIHRyYW5zZm9ybTpzY2FsZSgwLjg1KSA7XG59XG4iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".cart-icon{\n  cursor: pointer;\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jYXJ0LXN0YXR1cy9jYXJ0LXN0YXR1cy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZUFBZTtBQUNqQiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvY2FydC1zdGF0dXMvY2FydC1zdGF0dXMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJ0LWljb257XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuIl19 */");
 
 /***/ }),
 
@@ -1154,7 +1171,7 @@ CartStatusComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".makered{\n  color: red;\n}\nspan:hover{\n  cursor: pointer;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jaGVja291dC9jaGVja291dC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsVUFBVTtBQUNaO0FBQ0E7RUFDRSxlQUFlO0FBQ2pCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9jaGVja291dC9jaGVja291dC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1ha2VyZWR7XG4gIGNvbG9yOiByZWQ7XG59XG5zcGFuOmhvdmVye1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".makered{\n  color: red;\n}\nspan:hover{\n  cursor: pointer;\n}\n.final{\n  color: darkslateblue;\n}\n.quant{\n  display: flex;\n  flex-direction: column;\n  vertical-align: middle;\n  justify-content: center;\n\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9jaGVja291dC9jaGVja291dC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsVUFBVTtBQUNaO0FBQ0E7RUFDRSxlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxvQkFBb0I7QUFDdEI7QUFDQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsc0JBQXNCO0VBQ3RCLHVCQUF1Qjs7QUFFekIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2NoZWNrb3V0L2NoZWNrb3V0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubWFrZXJlZHtcbiAgY29sb3I6IHJlZDtcbn1cbnNwYW46aG92ZXJ7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5maW5hbHtcbiAgY29sb3I6IGRhcmtzbGF0ZWJsdWU7XG59XG4ucXVhbnR7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuXG59XG4iXX0= */");
 
 /***/ }),
 
@@ -1305,7 +1322,7 @@ FooterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".user-icon{\n  margin-left: 5px;\n  transform: scale(1.3);\n}\n.principal-center {\n    display: flex;\n    align-items: center;\n    margin-left: 5px;\n    color: white;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxnQkFBZ0I7RUFDaEIscUJBQXFCO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLGdCQUFnQjtJQUNoQixZQUFZO0FBQ2hCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudXNlci1pY29ue1xuICBtYXJnaW4tbGVmdDogNXB4O1xuICB0cmFuc2Zvcm06IHNjYWxlKDEuMyk7XG59XG4ucHJpbmNpcGFsLWNlbnRlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbi1sZWZ0OiA1cHg7XG4gICAgY29sb3I6IHdoaXRlO1xufVxuIl19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".user-icon{\n  margin-left: 5px;\n  transform: scale(1.3);\n\n}\n.principal-center {\n    display: flex;\n    align-items: center;\n    margin-left: 5px;\n    color: white;\n}\n.loggedin{\n  color:green;\n}\n.notloggedin{\n  color:yellow;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxnQkFBZ0I7RUFDaEIscUJBQXFCOztBQUV2QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsWUFBWTtBQUNoQjtBQUVBO0VBQ0UsV0FBVztBQUNiO0FBQ0E7RUFDRSxZQUFZO0FBQ2QiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi51c2VyLWljb257XG4gIG1hcmdpbi1sZWZ0OiA1cHg7XG4gIHRyYW5zZm9ybTogc2NhbGUoMS4zKTtcblxufVxuLnByaW5jaXBhbC1jZW50ZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXJnaW4tbGVmdDogNXB4O1xuICAgIGNvbG9yOiB3aGl0ZTtcbn1cblxuLmxvZ2dlZGlue1xuICBjb2xvcjpncmVlbjtcbn1cbi5ub3Rsb2dnZWRpbntcbiAgY29sb3I6eWVsbG93O1xufVxuIl19 */");
 
 /***/ }),
 
@@ -1424,9 +1441,9 @@ let OrderListComponent = class OrderListComponent {
         this.router = router;
         this.http = http;
         this.baseUrl = "https://350e5b3c0ac9.ngrok.io";
+        this.loading = true;
     }
     ngOnInit() {
-        this.loading = true;
         this.fetchOrders();
     }
     fetchOrders() {
@@ -1645,6 +1662,10 @@ let BookService = class BookService {
         const searchUrl = `${this.baseUrl}/search/categoryid?id=${categoryId}&page=${currentPage}&size=${pageSize}`;
         return this.httpClient.get(searchUrl);
     }
+    getsortedbooks(categoryId, currentPage, pageSize, sortorder) {
+        const searchUrl = `${this.baseUrl}/search/categoryid?id=${categoryId}&page=${currentPage}&size=${pageSize}&sort=unitPrice,${sortorder}`;
+        return this.httpClient.get(searchUrl);
+    }
     getbook(bookId) {
         const searchUrl = `${this.baseUrl}/${bookId}`;
         return this.httpClient.get(searchUrl);
@@ -1849,19 +1870,22 @@ const environment = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.js");
-/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.js");
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
 
 
 
 
 
-if (_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].production) {
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["enableProdMode"])();
+
+if (_environments_environment__WEBPACK_IMPORTED_MODULE_5__["environment"].production) {
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["enableProdMode"])();
 }
-Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_3__["AppModule"])
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_4__["AppModule"])
     .catch(err => console.error(err));
 
 
