@@ -137,7 +137,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"alert alert-danger text-center\" *ngIf=\"serverError\">\n  Server Is Offline. Try again in few Moments\n</div>\n<div *ngIf=\"loading\" class=\"d-flex justify-content-center\">\n  <div class=\"spinner-border\" role=\"status\">\n    <span class=\"sr-only\">Loading...</span>\n  </div>\n</div>\n<div *ngIf=\"!loading\" class=\"row\">\n  <div class=\"col-lg-3 col-md-3\">\n    <app-book-category\n      *ngIf=\"!serverError\"\n      (sortCriteria)=\"sortBooks($event)\"\n    ></app-book-category>\n    <!-- /.list group -->\n  </div>\n  <!-- /.col-lg-3 -->\n\n  <div class=\"col-lg-9 col-md-9 col-sm-12\">\n    <div\n      *ngIf=\"books?.length === 0\"\n      class=\"col-md-12 alert alert-warning text-center\"\n    >\n      No books Found\n    </div>\n    <div class=\"row\">\n      <div class=\"col-lg-4 col-md-6 mb-4\" *ngFor=\"let book of books\">\n        <!-- <div class=\"card h-100\">\n          <a routerLink=\"/books/{{ book.id }}\"\n            ><img\n              class=\"card-img-top  \"\n              [src]=\"book.imageUrl\"\n              alt=\"No Image\"\n          /></a>\n          <div class=\"card-body\">\n            <h4 class=\"card-title\">\n              <a routerLink=\"/books/{{ book.id }}\">{{ book.name }}</a>\n            </h4>\n            <h5>{{ book.unitPrice | currency: \"INR\" }}</h5>\n            <p class=\"card-text text-truncate\">\n              {{ book.description }}\n            </p>\n          </div>\n          <div class=\"card-footer text-center\">\n            <button class=\"btn btn-primary \" (click)=\"addToCart(book)\">Add to Cart</button>\n          </div>\n        </div> -->\n\n        <mat-card class=\"example-card\">\n           <a routerLink=\"/books/{{ book.id }}\"><img\n            mat-card-image\n            [src]=\"book.imageUrl\"\n            alt=\"Photo of a Shiba Inu\"\n            height=\"350px\"\n          /></a>\n          <mat-card-content>\n            <mat-card-title  class=\"text-truncate text-primary\">\n             <a routerLink=\"/books/{{ book.id }}\"> {{\n                book.name\n              }}\n              </a>\n\n            </mat-card-title>\n            <!-- <mat-card-subtitle class=\"text-truncate\">\n              {{ book.description }}</mat-card-subtitle\n            > -->\n          </mat-card-content>\n          <mat-card-actions class=\"d-flex justify-content-around\">\n            <h5 class=\"price pt-2\">{{book.unitPrice|currency:\"INR\"}}</h5>\n            <button mat-raised-button color=\"accent\" class=\"text-left\" (click)=\"addToCart(book)\">Add to Cart</button>\n          </mat-card-actions>\n        </mat-card>\n      </div>\n    </div>\n    <div class=\"row\" *ngIf=\"books?.length !== 0 && !serverError\">\n      <div class=\"col-md-6\">\n        <div class=\"row\">\n          <div class=\"col-md-4 mt-2 text-right\">Page Size:</div>\n          <div class=\"col-md-8\">\n            <select\n              class=\"form-control\"\n              (change)=\"updatepagesize($event.target.value)\"\n              style=\"width: auto;\"\n            >\n              <option value=\"5\" selected>5</option>\n              <option value=\"7\">7</option>\n              <option value=\"10\">10</option>\n            </select>\n          </div>\n        </div>\n      </div>\n      <div *ngIf=\"books\" class=\"col-md-6\">\n        <!-- jw paginaion selctor below -->\n        <ngb-pagination\n          class=\"d-flex justify-content-end\"\n          [maxSize]=\"maxSize\"\n          [(page)]=\"currentPage\"\n          [pageSize]=\"pageSize\"\n          [collectionSize]=\"totalRecords\"\n          (pageChange)=\"listbooks()\"\n        ></ngb-pagination>\n        <!-- <jw-pagination\n          [pageSize]=\"pageSize\"\n          [items]=\"books\"\n          (changePage)=\"pageclick($event)\"\n        ></jw-pagination> -->\n      </div>\n    </div>\n  </div>\n  <!-- /.col-lg-9 -->\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"alert alert-danger text-center\" *ngIf=\"serverError\">\n  Server Is Offline. Try again in few Moments\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-3 col-md-3\">\n    <app-book-category\n      (sortCriteria)=\"sortBooks($event)\"\n    ></app-book-category>\n    <!-- /.list group -->\n  </div>\n  <!-- /.col-lg-3 -->\n  <div *ngIf=\"loading\" class=\"col-lg-9 col-md-9 col-sm-12\">\n  <div class=\"d-flex justify-content-center\">\n  <div class=\"spinner-border\" role=\"status\">\n    <span class=\"sr-only\">Loading...</span>\n  </div>\n</div>\n</div>\n\n  <div class=\"col-lg-9 col-md-9 col-sm-12\" *ngIf=\"!loading\">\n    <div\n      *ngIf=\"books?.length === 0\"\n      class=\"col-md-12 alert alert-warning text-center\"\n    >\n      No books Found\n    </div>\n    <div class=\"row\">\n      <div class=\"col-lg-4 col-md-6 mb-4\" *ngFor=\"let book of books\">\n        <!-- <div class=\"card h-100\">\n          <a routerLink=\"/books/{{ book.id }}\"\n            ><img\n              class=\"card-img-top  \"\n              [src]=\"book.imageUrl\"\n              alt=\"No Image\"\n          /></a>\n          <div class=\"card-body\">\n            <h4 class=\"card-title\">\n              <a routerLink=\"/books/{{ book.id }}\">{{ book.name }}</a>\n            </h4>\n            <h5>{{ book.unitPrice | currency: \"INR\" }}</h5>\n            <p class=\"card-text text-truncate\">\n              {{ book.description }}\n            </p>\n          </div>\n          <div class=\"card-footer text-center\">\n            <button class=\"btn btn-primary \" (click)=\"addToCart(book)\">Add to Cart</button>\n          </div>\n        </div> -->\n\n        <mat-card class=\"example-card h-100\">\n           <a routerLink=\"/books/{{ book.id }}\"><img\n            mat-card-image\n            [src]=\"book.imageUrl\"\n            alt=\"Photo of a Shiba Inu\"\n            height=\"350px\"\n          /></a>\n          <mat-card-content>\n            <mat-card-title  class=\"text-primary\">\n             <a routerLink=\"/books/{{ book.id }}\"> {{\n                book.name\n              }}\n              </a>\n\n            </mat-card-title>\n            <!-- <mat-card-subtitle class=\"text-truncate\">\n              {{ book.description }}</mat-card-subtitle\n            > -->\n          </mat-card-content>\n          <mat-card-actions class=\"d-flex justify-content-around\">\n            <h5 class=\"price pt-2\">{{book.unitPrice|currency:\"INR\"}}</h5>\n            <button mat-raised-button color=\"accent\" class=\"text-left\" (click)=\"addToCart(book)\">Add to Cart</button>\n          </mat-card-actions>\n        </mat-card>\n      </div>\n    </div>\n    <div class=\"row\" *ngIf=\"books?.length !== 0 && !serverError\">\n      <div class=\"col-md-6\">\n        <div class=\"row\">\n          <div class=\"col-md-4 mt-2 text-right\">Page Size:</div>\n          <div class=\"col-md-8\">\n            <select\n              class=\"form-control\"\n              (change)=\"updatepagesize($event.target.value)\"\n              style=\"width: auto;\"\n            >\n              <option value=\"5\" selected>5</option>\n              <option value=\"7\">7</option>\n              <option value=\"10\">10</option>\n            </select>\n          </div>\n        </div>\n      </div>\n      <div *ngIf=\"books\" class=\"col-md-6\">\n        <!-- jw paginaion selctor below -->\n        <ngb-pagination\n          class=\"d-flex justify-content-end\"\n          [maxSize]=\"maxSize\"\n          [(page)]=\"currentPage\"\n          [pageSize]=\"pageSize\"\n          [collectionSize]=\"totalRecords\"\n          (pageChange)=\"listbooks()\"\n        ></ngb-pagination>\n        <!-- <jw-pagination\n          [pageSize]=\"pageSize\"\n          [items]=\"books\"\n          (changePage)=\"pageclick($event)\"\n        ></jw-pagination> -->\n      </div>\n    </div>\n  </div>\n  <!-- /.col-lg-9 -->\n</div>\n";
     /***/
   },
 
@@ -1914,6 +1914,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "listbooks",
         value: function listbooks() {
+          this.loading = true;
           this.searchmode = this.activatedRoute.snapshot.paramMap.has('keyword');
 
           if (this.searchmode) {
@@ -1927,6 +1928,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function handlelistbooks() {
           var _this10 = this;
 
+          this.loading = true;
           var hasCategoryId = this.activatedRoute.snapshot.paramMap.has('id');
 
           if (hasCategoryId) {
@@ -1938,10 +1940,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.prevCategoryId = this.currentCategoryId;
-          this.bookService.getbooks(this.currentCategoryId, this.currentPage - 1, this.pageSize).subscribe(this.handlePagination(), function (error) {
-            _this10.loading = false;
-            _this10.serverError = true;
-          });
+
+          if (this.sortCriteria == null) {
+            this.bookService.getbooks(this.currentCategoryId, this.currentPage - 1, this.pageSize).subscribe(this.handlePagination(), function (error) {
+              _this10.loading = false;
+              _this10.serverError = true;
+            });
+          } else {
+            this.bookService.getsortedbooks(this.currentCategoryId, this.currentPage - 1, this.pageSize, this.sortCriteria).subscribe(this.handlePagination(), function (error) {
+              _this10.loading = false;
+              _this10.serverError = true;
+            });
+          }
         }
       }, {
         key: "handlesearchbooks",
@@ -1979,15 +1989,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "sortBooks",
         value: function sortBooks(val) {
-          this.loading = true;
-          var sortorder = "";
+          var _this12 = this;
 
-          if (val === undefined) {
+          this.loading = true;
+          this.sortCriteria = val;
+
+          if (this.sortCriteria === undefined) {
             return;
           }
 
-          sortorder = val === "A" ? "asc" : "desc";
-          this.bookService.getsortedbooks(this.currentCategoryId, this.currentPage - 1, this.pageSize, sortorder).subscribe(this.handlePagination());
+          this.sortCriteria = val === "A" ? "asc" : "desc";
+          this.bookService.getsortedbooks(this.currentCategoryId, this.currentPage - 1, this.pageSize, this.sortCriteria).subscribe(this.handlePagination(), function (error) {
+            _this12.loading = false;
+            _this12.serverError = true;
+          });
         }
       }]);
 
@@ -2107,13 +2122,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "updateCart",
         value: function updateCart() {
-          var _this12 = this;
+          var _this13 = this;
 
           this.cartService.totalPrice.subscribe(function (data) {
-            return _this12.totalPrice = data;
+            return _this13.totalPrice = data;
           });
           this.cartService.totalQuantity.subscribe(function (data) {
-            return _this12.totalQuantity = data;
+            return _this13.totalQuantity = data;
           });
         }
       }, {
@@ -2230,10 +2245,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(CheckoutComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this13 = this;
+          var _this14 = this;
 
           this.authService.principal.subscribe(function (p) {
-            return _this13.principal = p;
+            return _this14.principal = p;
           });
           this.loadSessionItems();
           this.getItems();
@@ -2250,14 +2265,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getTotal",
         value: function getTotal() {
-          var _this14 = this;
+          var _this15 = this;
 
           this._cartService.totalPrice.subscribe(function (price) {
-            return _this14.totalPrice = price;
+            return _this15.totalPrice = price;
           });
 
           this._cartService.totalQuantity.subscribe(function (quant) {
-            return _this14.totalQuantity = quant;
+            return _this15.totalQuantity = quant;
           });
         }
       }, {
@@ -2284,7 +2299,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "placeOrder",
         value: function placeOrder() {
-          var _this15 = this;
+          var _this16 = this;
 
           var order = {};
 
@@ -2303,7 +2318,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this._cartService.placeOrderService(order, this.totalPrice, this.principal).subscribe(function (data) {
-            _this15._router.navigate(["ordershistory"]);
+            _this16._router.navigate(["ordershistory"]);
           });
 
           this.items.length = 0;
@@ -2505,23 +2520,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(HeaderComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this16 = this;
+          var _this17 = this;
 
           this.checkLocalStore();
           this.authService.principal.subscribe(function (p) {
-            return _this16.principal = p;
+            return _this17.principal = p;
           });
         }
       }, {
         key: "checkLocalStore",
         value: function checkLocalStore() {
-          var _this17 = this;
+          var _this18 = this;
 
           if (localStorage.token !== undefined) {
             this.authService.getPrincipalfromJwt().subscribe(function (data) {
-              _this17.authService.principal.next(data);
+              _this18.authService.principal.next(data);
 
-              _this17.authService.loggedIn.next("Logged In");
+              _this18.authService.loggedIn.next("Logged In");
             });
           }
         }
@@ -2670,14 +2685,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "fetchOrders",
         value: function fetchOrders() {
-          var _this18 = this;
+          var _this19 = this;
 
           this.cartService.getOrdersService(localStorage.USER).subscribe(function (orders) {
             console.log("got orders");
-            _this18.orders = orders.sort(function (a, b) {
+            _this19.orders = orders.sort(function (a, b) {
               return a.id < b.id ? 1 : -1;
             });
-            _this18.loading = false;
+            _this19.loading = false;
           });
         }
       }, {
@@ -2690,25 +2705,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "goToBook",
         value: function goToBook(name) {
-          var _this19 = this;
+          var _this20 = this;
 
           var findurl = "".concat(this.baseUrl, "/getbookid?name=").concat(name);
           this.http.get(findurl, {
             responseType: 'text'
           }).subscribe(function (data) {
-            _this19.router.navigate(["/books/".concat(data)]);
+            _this20.router.navigate(["/books/".concat(data)]);
           });
         }
       }, {
         key: "deleteOrder",
         value: function deleteOrder(id) {
-          var _this20 = this;
+          var _this21 = this;
 
           var url = "".concat(this.baseUrl, "/deleteorder?orderId=").concat(id);
           this.http["delete"](url, {
             responseType: 'text'
           }).subscribe(function (data) {
-            return _this20.fetchOrders();
+            return _this21.fetchOrders();
           });
         }
       }]);

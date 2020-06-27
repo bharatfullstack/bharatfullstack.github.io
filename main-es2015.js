@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"alert alert-danger text-center\" *ngIf=\"serverError\">\n  Server Is Offline. Try again in few Moments\n</div>\n<div *ngIf=\"loading\" class=\"d-flex justify-content-center\">\n  <div class=\"spinner-border\" role=\"status\">\n    <span class=\"sr-only\">Loading...</span>\n  </div>\n</div>\n<div *ngIf=\"!loading\" class=\"row\">\n  <div class=\"col-lg-3 col-md-3\">\n    <app-book-category\n      *ngIf=\"!serverError\"\n      (sortCriteria)=\"sortBooks($event)\"\n    ></app-book-category>\n    <!-- /.list group -->\n  </div>\n  <!-- /.col-lg-3 -->\n\n  <div class=\"col-lg-9 col-md-9 col-sm-12\">\n    <div\n      *ngIf=\"books?.length === 0\"\n      class=\"col-md-12 alert alert-warning text-center\"\n    >\n      No books Found\n    </div>\n    <div class=\"row\">\n      <div class=\"col-lg-4 col-md-6 mb-4\" *ngFor=\"let book of books\">\n        <!-- <div class=\"card h-100\">\n          <a routerLink=\"/books/{{ book.id }}\"\n            ><img\n              class=\"card-img-top  \"\n              [src]=\"book.imageUrl\"\n              alt=\"No Image\"\n          /></a>\n          <div class=\"card-body\">\n            <h4 class=\"card-title\">\n              <a routerLink=\"/books/{{ book.id }}\">{{ book.name }}</a>\n            </h4>\n            <h5>{{ book.unitPrice | currency: \"INR\" }}</h5>\n            <p class=\"card-text text-truncate\">\n              {{ book.description }}\n            </p>\n          </div>\n          <div class=\"card-footer text-center\">\n            <button class=\"btn btn-primary \" (click)=\"addToCart(book)\">Add to Cart</button>\n          </div>\n        </div> -->\n\n        <mat-card class=\"example-card\">\n           <a routerLink=\"/books/{{ book.id }}\"><img\n            mat-card-image\n            [src]=\"book.imageUrl\"\n            alt=\"Photo of a Shiba Inu\"\n            height=\"350px\"\n          /></a>\n          <mat-card-content>\n            <mat-card-title  class=\"text-truncate text-primary\">\n             <a routerLink=\"/books/{{ book.id }}\"> {{\n                book.name\n              }}\n              </a>\n\n            </mat-card-title>\n            <!-- <mat-card-subtitle class=\"text-truncate\">\n              {{ book.description }}</mat-card-subtitle\n            > -->\n          </mat-card-content>\n          <mat-card-actions class=\"d-flex justify-content-around\">\n            <h5 class=\"price pt-2\">{{book.unitPrice|currency:\"INR\"}}</h5>\n            <button mat-raised-button color=\"accent\" class=\"text-left\" (click)=\"addToCart(book)\">Add to Cart</button>\n          </mat-card-actions>\n        </mat-card>\n      </div>\n    </div>\n    <div class=\"row\" *ngIf=\"books?.length !== 0 && !serverError\">\n      <div class=\"col-md-6\">\n        <div class=\"row\">\n          <div class=\"col-md-4 mt-2 text-right\">Page Size:</div>\n          <div class=\"col-md-8\">\n            <select\n              class=\"form-control\"\n              (change)=\"updatepagesize($event.target.value)\"\n              style=\"width: auto;\"\n            >\n              <option value=\"5\" selected>5</option>\n              <option value=\"7\">7</option>\n              <option value=\"10\">10</option>\n            </select>\n          </div>\n        </div>\n      </div>\n      <div *ngIf=\"books\" class=\"col-md-6\">\n        <!-- jw paginaion selctor below -->\n        <ngb-pagination\n          class=\"d-flex justify-content-end\"\n          [maxSize]=\"maxSize\"\n          [(page)]=\"currentPage\"\n          [pageSize]=\"pageSize\"\n          [collectionSize]=\"totalRecords\"\n          (pageChange)=\"listbooks()\"\n        ></ngb-pagination>\n        <!-- <jw-pagination\n          [pageSize]=\"pageSize\"\n          [items]=\"books\"\n          (changePage)=\"pageclick($event)\"\n        ></jw-pagination> -->\n      </div>\n    </div>\n  </div>\n  <!-- /.col-lg-9 -->\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"alert alert-danger text-center\" *ngIf=\"serverError\">\n  Server Is Offline. Try again in few Moments\n</div>\n\n<div class=\"row\">\n  <div class=\"col-lg-3 col-md-3\">\n    <app-book-category\n      (sortCriteria)=\"sortBooks($event)\"\n    ></app-book-category>\n    <!-- /.list group -->\n  </div>\n  <!-- /.col-lg-3 -->\n  <div *ngIf=\"loading\" class=\"col-lg-9 col-md-9 col-sm-12\">\n  <div class=\"d-flex justify-content-center\">\n  <div class=\"spinner-border\" role=\"status\">\n    <span class=\"sr-only\">Loading...</span>\n  </div>\n</div>\n</div>\n\n  <div class=\"col-lg-9 col-md-9 col-sm-12\" *ngIf=\"!loading\">\n    <div\n      *ngIf=\"books?.length === 0\"\n      class=\"col-md-12 alert alert-warning text-center\"\n    >\n      No books Found\n    </div>\n    <div class=\"row\">\n      <div class=\"col-lg-4 col-md-6 mb-4\" *ngFor=\"let book of books\">\n        <!-- <div class=\"card h-100\">\n          <a routerLink=\"/books/{{ book.id }}\"\n            ><img\n              class=\"card-img-top  \"\n              [src]=\"book.imageUrl\"\n              alt=\"No Image\"\n          /></a>\n          <div class=\"card-body\">\n            <h4 class=\"card-title\">\n              <a routerLink=\"/books/{{ book.id }}\">{{ book.name }}</a>\n            </h4>\n            <h5>{{ book.unitPrice | currency: \"INR\" }}</h5>\n            <p class=\"card-text text-truncate\">\n              {{ book.description }}\n            </p>\n          </div>\n          <div class=\"card-footer text-center\">\n            <button class=\"btn btn-primary \" (click)=\"addToCart(book)\">Add to Cart</button>\n          </div>\n        </div> -->\n\n        <mat-card class=\"example-card h-100\">\n           <a routerLink=\"/books/{{ book.id }}\"><img\n            mat-card-image\n            [src]=\"book.imageUrl\"\n            alt=\"Photo of a Shiba Inu\"\n            height=\"350px\"\n          /></a>\n          <mat-card-content>\n            <mat-card-title  class=\"text-primary\">\n             <a routerLink=\"/books/{{ book.id }}\"> {{\n                book.name\n              }}\n              </a>\n\n            </mat-card-title>\n            <!-- <mat-card-subtitle class=\"text-truncate\">\n              {{ book.description }}</mat-card-subtitle\n            > -->\n          </mat-card-content>\n          <mat-card-actions class=\"d-flex justify-content-around\">\n            <h5 class=\"price pt-2\">{{book.unitPrice|currency:\"INR\"}}</h5>\n            <button mat-raised-button color=\"accent\" class=\"text-left\" (click)=\"addToCart(book)\">Add to Cart</button>\n          </mat-card-actions>\n        </mat-card>\n      </div>\n    </div>\n    <div class=\"row\" *ngIf=\"books?.length !== 0 && !serverError\">\n      <div class=\"col-md-6\">\n        <div class=\"row\">\n          <div class=\"col-md-4 mt-2 text-right\">Page Size:</div>\n          <div class=\"col-md-8\">\n            <select\n              class=\"form-control\"\n              (change)=\"updatepagesize($event.target.value)\"\n              style=\"width: auto;\"\n            >\n              <option value=\"5\" selected>5</option>\n              <option value=\"7\">7</option>\n              <option value=\"10\">10</option>\n            </select>\n          </div>\n        </div>\n      </div>\n      <div *ngIf=\"books\" class=\"col-md-6\">\n        <!-- jw paginaion selctor below -->\n        <ngb-pagination\n          class=\"d-flex justify-content-end\"\n          [maxSize]=\"maxSize\"\n          [(page)]=\"currentPage\"\n          [pageSize]=\"pageSize\"\n          [collectionSize]=\"totalRecords\"\n          (pageChange)=\"listbooks()\"\n        ></ngb-pagination>\n        <!-- <jw-pagination\n          [pageSize]=\"pageSize\"\n          [items]=\"books\"\n          (changePage)=\"pageclick($event)\"\n        ></jw-pagination> -->\n      </div>\n    </div>\n  </div>\n  <!-- /.col-lg-9 -->\n</div>\n");
 
 /***/ }),
 
@@ -1010,6 +1010,7 @@ let BookListComponent = class BookListComponent {
     }
     //determine search mode is url has keyword? handlesearch or handlelist
     listbooks() {
+        this.loading = true;
         this.searchmode = this.activatedRoute.snapshot.paramMap.has('keyword');
         if (this.searchmode) {
             this.handlesearchbooks();
@@ -1019,6 +1020,7 @@ let BookListComponent = class BookListComponent {
         }
     }
     handlelistbooks() {
+        this.loading = true;
         const hasCategoryId = this.activatedRoute.snapshot.paramMap.has('id');
         if (hasCategoryId) {
             this.currentCategoryId = +this.activatedRoute.snapshot.paramMap.get('id');
@@ -1027,12 +1029,21 @@ let BookListComponent = class BookListComponent {
             this.currentPage = 1;
         }
         this.prevCategoryId = this.currentCategoryId;
-        this.bookService
-            .getbooks(this.currentCategoryId, this.currentPage - 1, this.pageSize)
-            .subscribe(this.handlePagination(), error => {
-            this.loading = false;
-            this.serverError = true;
-        });
+        if (this.sortCriteria == null) {
+            this.bookService
+                .getbooks(this.currentCategoryId, this.currentPage - 1, this.pageSize)
+                .subscribe(this.handlePagination(), error => {
+                this.loading = false;
+                this.serverError = true;
+            });
+        }
+        else {
+            this.bookService.getsortedbooks(this.currentCategoryId, this.currentPage - 1, this.pageSize, this.sortCriteria)
+                .subscribe(this.handlePagination(), error => {
+                this.loading = false;
+                this.serverError = true;
+            });
+        }
     }
     handlesearchbooks() {
         const keyword = this.activatedRoute.snapshot.paramMap.get('keyword');
@@ -1061,13 +1072,16 @@ let BookListComponent = class BookListComponent {
     }
     sortBooks(val) {
         this.loading = true;
-        let sortorder = "";
-        if (val === undefined) {
+        this.sortCriteria = val;
+        if (this.sortCriteria === undefined) {
             return;
         }
-        sortorder = val === "A" ? "asc" : "desc";
-        this.bookService.getsortedbooks(this.currentCategoryId, this.currentPage - 1, this.pageSize, sortorder)
-            .subscribe(this.handlePagination());
+        this.sortCriteria = val === "A" ? "asc" : "desc";
+        this.bookService.getsortedbooks(this.currentCategoryId, this.currentPage - 1, this.pageSize, this.sortCriteria)
+            .subscribe(this.handlePagination(), error => {
+            this.loading = false;
+            this.serverError = true;
+        });
     }
 };
 BookListComponent.ctorParameters = () => [
